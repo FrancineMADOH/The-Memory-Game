@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>The Memory Game</title>
+        <link rel="stylesheet" href="cards.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+     </head>
+
+    <body>
+
+        <div class="header"><!--the score panel and the rating system-->
+
+            <h1>THE MATCHING GAME</h1>
+
+            <!--the score panel-->
+                <div class="rating">
+                        <p class="move"></p>
+                        <p class="timer"></p>
+                        <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                        </ul>  
+                   <button class="playagain" type="button">PLAY AGAIN</button>     
+                        
+                 </div>
+        </div>         
+               
+
+         <div id="container"><!--a grid for all the game cards-->
+
+
+                <div class="memory-card"  data-name = "butterfly" >
+                                <div class="front"><img src="https://images.pexels.com/photos/462118/pexels-photo-462118.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500" alt="butterfly"> </div>
+                                <div class="back"><img src="https://images.pexels.com/photos/37727/pexels-photo-37727.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="black font"> </div>
+                        </div>
+
+                <div class="memory-card" data-name = "butterfly" >
+                        <div class= "img1">
+                                <div class="front"><img src="https://images.pexels.com/photos/462118/pexels-photo-462118.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500" alt="butterfly"> </div>
+                                <div class="back"><img src="https://images.pexels.com/photos/37727/pexels-photo-37727.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="black font"> </div>
+                        </div>
+                </div>
+                <div class="memory-card" data-name = "lion" >
+                        <div class="front"><img src="https://images.pexels.com/photos/40756/lion-safari-afika-landscape-40756.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500" alt="lion"> </div>
+                        <div class="back"><img src="https://images.pexels.com/photos/37727/pexels-photo-37727.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="black font"> </div>
+                </div>
+                <div class="memory-card" data-name = "lion">
+                        <div class="front"><img src="https://images.pexels.com/photos/40756/lion-safari-afika-landscape-40756.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500" alt="lion"> </div>
+                        <div class="back"><img src="https://images.pexels.com/photos/37727/pexels-photo-37727.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="black font"> </div>
+    
+                </div>
+                <div class="memory-card" data-name = "ice" >
+                        <div class="front"><img src="https://images.pexels.com/photos/53389/iceberg-antarctica-polar-blue-53389.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="ice"></div>
+                        <div class="back"><img src="https://images.pexels.com/photos/37727/pexels-photo-37727.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="black font"> </div>
+
+                </div>
+                <div class="memory-card" data-name = "ice">
+                        <div class="front"><img src="https://images.pexels.com/photos/53389/iceberg-antarctica-polar-blue-53389.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="ice"></div>
+                        <div class="back"><img src="https://images.pexels.com/photos/37727/pexels-photo-37727.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="black font"> </div>
+                 </div>
+
+                 <div class="memory-card" data-name = "water" >
+                                <div class="front"><img src="https://images.pexels.com/photos/40784/drops-of-water-water-nature-liquid-40784.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="water"> </div>
+                                <div class="back"><img src="https://images.pexels.com/photos/37727/pexels-photo-37727.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="black font"> </div>
+                </div>
+                <div class="memory-card" data-name = "water" >
+                        <div class="front"><img src="https://images.pexels.com/photos/40784/drops-of-water-water-nature-liquid-40784.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="water"> </div>
+                        <div class="back"><img src="https://images.pexels.com/photos/37727/pexels-photo-37727.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="black font"> </div>
+                </div>
+                <div class="memory-card" data-name = "fire" >
+                                <div class="front"><img src= "https://images.pexels.com/photos/1374889/pexels-photo-1374889.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"    alt="fire"> </div>
+                                <div class="back"><img src = "https://images.pexels.com/photos/37727/pexels-photo-37727.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="black font"> </div>
+
+                        </div>
+                <div class="memory-card" data-name = "fire" >
+                        <div class= "back"><img  src="https://images.pexels.com/photos/37727/pexels-photo-37727.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt= "black font"> </div>
+                        <div class="front"><img src="https://images.pexels.com/photos/1374889/pexels-photo-1374889.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="fire"> </div>
+                </div>
+                <div class="memory-card" data-name = "trees">
+                                <div class="front"><img src="https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="trees"> </div>
+                                <div class="back"><img src="https://images.pexels.com/photos/37727/pexels-photo-37727.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="black font"> </div>
+                </div>
+                <div class="memory-card" data-name = "trees" >
+                                <div class="front"><img src="https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="trees"> </div>
+                                <div class="back"><img src="https://images.pexels.com/photos/37727/pexels-photo-37727.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="black font"> </div>
+                </div>
+                
+                <div class="memory-card" data-name = "beach">
+                                <div class="front"><img src="https://images.pexels.com/photos/459522/pexels-photo-459522.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500" alt="beach"> </div>
+                                <div class="back"><img src="https://images.pexels.com/photos/37727/pexels-photo-37727.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="black font"> </div>
+                </div>
+                <div class="memory-card" data-name = "beach" >
+                                <div class="front"><img src="https://images.pexels.com/photos/459522/pexels-photo-459522.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500" alt="beach"> </div>
+                             <div class="back"><img src="https://images.pexels.com/photos/37727/pexels-photo-37727.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="black font"> </div>
+                </div>
+                <div class="memory-card " data-name = "redtrees" >
+                                <div class="front"><img src="https://images.pexels.com/photos/207962/pexels-photo-207962.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500" alt="redtree"> </div>
+                                <div class="back"><img src="https://images.pexels.com/photos/37727/pexels-photo-37727.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="black font"> </div>
+                </div>
+
+                <div class="memory-card" data-name = "redtrees" >
+                                <div class="front"><img src="https://images.pexels.com/photos/207962/pexels-photo-207962.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500" alt="redtree"> </div>
+                                <div class="back"><img src="https://images.pexels.com/photos/37727/pexels-photo-37727.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="black font"> </div>
+                </div>
+                
+             </div>
+
+             <div class="won"></div>
+             
+    </body>
+
+    <!--adding some javascript here-->
+
+    <script src="app.js" ></script>
+    
+
+</html>
