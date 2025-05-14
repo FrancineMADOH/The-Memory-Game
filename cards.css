@@ -104,7 +104,7 @@ li{
     font-family: 'Indie Flower', cursive;
     
 }
-.timer{
+.timer, .won{
     background-color: rgb(176, 15, 224); 
     border: none;
     color: white;
@@ -115,6 +115,7 @@ li{
     font-family: 'Indie Flower', cursive;
     
 }
+
 
 /* adding some media queries*/
 

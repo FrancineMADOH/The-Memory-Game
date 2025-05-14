@@ -6,6 +6,8 @@ going to change in our case*/
 const allCards = document.querySelectorAll('.memory-card');
 const cardGrid = document.querySelector('#container');
 
+console.log(allCards.length)
+
 function onStart() {
     const shuffledCard = shuffle(Array.from(allCards));
     for (let newCards of shuffledCard) {
@@ -44,9 +46,11 @@ allCards.forEach(card => card.addEventListener('click', playing));
 
 let clickedCard = false;
 let card1, card2;
+let matchingPair = 0;
 
 //let's define the playing function
 function playing() {
+   
     this.classList.toggle('flip');
     if (!clickedCard) {
         clickedCard = true;
@@ -66,7 +70,9 @@ function playing() {
             card2.removeEventListener('click', playing);
 
             //wow the cards match
-
+            
+            matchingPair +=1
+          
         } else {
             setTimeout(() => {
                 card1.classList.remove('flip');
@@ -79,7 +85,6 @@ function playing() {
         //moves += 1; we add move in countMove() already
         countMove();
         score.innerHTML = moves;
-        console.log('timer');
     };
 }
 
@@ -106,6 +111,7 @@ function countMove() {
         hour = 0;
         startTimer();
     }
+    userWon()
 
 }
 
@@ -116,6 +122,7 @@ let timer = document.querySelector(".timer");
 timer.innerHTML = "0 mins 0sec";
 
 let interval;
+
 
 function startTimer() {
     interval = setInterval(function () {
@@ -130,5 +137,21 @@ function startTimer() {
             minute = 0;
         }
     }, 1000);
+
+   
 };
 
+
+ // TODO: implement the winner function, inform the user he won
+ let wonview = document.querySelector('.won');
+ function userWon(){
+    let pair = allCards.length / 2
+    //console.log(pair)
+    if(matchingPair == pair) {
+          wonview.innerHTML = `Congratulations ! You won  in just  ${moves} !` 
+          clearInterval(interval)
+
+    }else{
+        wonview.innerHTML = "Playing..."  
+    }
+ }
