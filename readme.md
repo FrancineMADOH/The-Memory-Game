@@ -17,3 +17,7 @@ The game board consists of sixteen "cards" arranged in a grid. The deck is made 
 
 1. Open the index.html file in the browser and have fun.
 2. Restart the game by refreshing the page content
+
+## Where to play ?
+
+This app has been deployed on `https://memorygame.isfranny.net`
